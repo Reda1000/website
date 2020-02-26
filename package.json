@@ -1,0 +1,9 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "echarts": "^4.6.0",
+    "echarts.js": "3.0.0-beta3"
+  }
+}

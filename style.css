@@ -1,0 +1,316 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #30373D;
+  background: #cfcfcf;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 16px
+}
+
+.material-icons-outlined, .material-icons {
+    vertical-align: middle;
+}
+
+.material-icons-outlined.inverted, .material-icons.inverted {
+  color: #30373D;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+.list.list--with-icon {
+  list-style: none
+}
+.list.list--with-space {
+  margin: 0 calc(1.5rem + 3px + 0.2rem);
+}
+.list.list--with-icon > li > i {
+  margin: 0.2rem 0.6rem;
+  margin-left: 0;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+.columns > * {
+  flex: 1;
+}
+
+.print-container {
+  flex: 0 0 21cm; 
+  display: flex;
+  margin: 0.5rem;
+  box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.75);
+}
+
+.projects {
+  background: #30373D;
+  padding: 0.5rem;
+  color: white;
+}
+.page {
+  flex: 0 0 21cm; height:29.69cm; display: flex;
+  position: relative;
+  background: white;
+}
+
+.page > .print {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid #30373D;
+  background: white;
+  margin: 1rem;
+  color: #30373D;
+}
+
+@media print {
+  .print-container {
+    margin: 20rem;
+    box-shadow: none;
+  }
+  .print {
+    display: none;
+  }
+}
+
+.page.page--column {
+  flex-direction: column;
+}
+
+.page.page--dark {
+  background: #30373D;
+  color: white;
+}
+
+.title {
+  background: #30373D;
+  color: white;
+  text-align: center;
+  flex: 1;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.title h1 {
+  font-size: 50px;
+  padding:2rem 0;
+}
+.title h2 {
+  font-size: 50px;
+  padding-top:2rem;
+}
+.title h3 {
+  font-size: 30px;
+  padding-bottom: 3rem;
+}
+
+.personal {
+  display: flex;
+  align-items: flex-end;
+}
+.details ul {
+  margin: 0 0.2rem;
+}
+
+.individual {
+  flex: 0 0 16rem; 
+  background: #30373D;
+  display: flex;
+  flex-direction: column;
+}
+
+.individual i {
+  padding: 0; vertical-align: middle
+}
+
+.individual {
+  color: white !important
+}
+
+.individual > h5 {
+  border-bottom: 3px solid white;
+  text-indent: 4rem;
+  font-size: large;
+  padding-bottom: 0.2rem;
+  margin-top: 1rem;
+}
+
+.experience {
+  justify-content: stretch;
+  display: flex;
+}
+
+/*.timeline__event {
+  position: relative;
+  cursor: help;
+}
+
+@media screen {
+  .timeline__event {
+  }
+
+  .timeline__event > p {
+    display: none;
+  }
+
+  .timeline__event:hover > p {
+    display: block;
+  }
+}
+
+@media print {
+  .timeline__event > div > .info {
+    display: none;
+  }
+
+  .timeline__event > div > p {
+    display: block;
+  }
+}*/
+
+.skill-set, .link-set {
+  margin: 0; margin-top: 0.5rem; padding: 0; list-style: none;  
+}
+
+.skill-set > li, .link-set > li {
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #636F7D; background: white; color: black; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+}
+.link-set > li > a {
+  color: black;
+}
+.link-set > li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.skill-set > .skill-set__skill.skill--activity {
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #97ADBF; background: #97ADBF; color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+}
+
+.skill-set > .skill-set__skill.skill--framework {
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #636F7D; background: #636F7D; color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+}
+
+.skill-set > .skill-set__skill.skill--technology {
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #30373D; background: #30373D; color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+}
+
+.goal-set {
+  margin: 0; margin-top: 0.5rem; padding: 0; list-style: none;  
+}
+
+.goal-set > li {
+}
+
+.inverter {
+  background: #636F7D;
+  color: white !important;
+}
+
+.inverter .timeline {
+  border-left: 3px solid white; 
+}
+
+.timeline, .activity {
+  flex: 1; padding: 1.5rem; border-left: 3px solid #636F7D; margin-left: 2.5rem;
+}
+.activity {
+  flex: 0; border-left: 0px solid #636F7D; margin-left: 1rem; padding: 0; padding-top: 0.8rem;
+}
+.activity + .activity {
+  padding-top: 0rem;
+}
+
+.timeline.timeline--small {
+  margin-left: 2.2rem; padding: 0; padding-top: 1rem; padding-left: calc(1rem - 6px); border-left: 3px solid white; 
+}
+
+.timeline.timeline--small > i {
+  left: -1.8rem;
+  border: 0px solid #636F7D;
+  padding: 0.35rem;
+  background: white;
+  color: #636F7D;
+  margin-top: 0.8rem;
+  top: -0.1rem;
+}
+
+.inverter .timeline > i {
+  border: 3px solid white; background: white; 
+}
+
+.timeline > i, .activity > i {
+  position: relative; left: -3rem; border-radius: 100%; border: 3px solid #636F7D; padding: 0.5rem; background: white; color: #636F7D; vertical-align: middle;
+  top: 0.2rem;
+}
+.activity > i {
+  border: 0px solid #636F7D; padding: 0; background: transparent; color: white;
+  left: 0.5rem;
+}
+
+.timeline > div, .activity > div {
+  padding: 0.8rem; margin-top: -4.1rem
+}
+.activity > div {
+  margin-top: -2.8rem;
+  margin-left: 2rem;
+}
+
+.timeline > div > p {
+  margin: 0; margin-top: 0.3rem;
+}
+
+.motivation {
+  display: flex;
+  background: #30373D;
+  color: white;
+  padding-right: 2rem;
+}
+
+.motivation h5 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.skills_goals {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.skills_goals h5 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid #30373D;
+  text-align: center;
+}
+
+.tools {
+  flex: 1;
+}
+
+.tools h5 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid #30373D;
+  text-align: center;
+}
+
+.salutation {
+  padding: 2rem;
+
+}
+
+.salutation p {
+  font-size: 2rem;
+  margin: 0;
+}
