@@ -84,16 +84,20 @@ window['printDiv'] = function (divID) {
         '<html><head><title></title><style>html, body { margin: 0; padding: 0} </style></head><body>' +
             divElements +
             '</body>';
-    document.getElementById('main').removeAttribute('_echarts_instance_');
-    myChart = echarts.init(document.getElementById('main'));
-    myChart.setOption(option);
+    if(document.getElementById('main')) {
+      document.getElementById('main').removeAttribute('_echarts_instance_');
+      myChart = echarts.init(document.getElementById('main'));
+      myChart.setOption(option);
+    }
     setTimeout(function () {
         //Print Page
         window.print();
         //Restore orignal HTML
         document.body.innerHTML = oldPage;
-        document.getElementById('main').removeAttribute('_echarts_instance_');
-        myChart = echarts.init(document.getElementById('main'));
-        myChart.setOption(option);
+        if(document.getElementById('main')) {
+          document.getElementById('main').removeAttribute('_echarts_instance_');
+          myChart = echarts.init(document.getElementById('main'));
+          myChart.setOption(option);
+        }
     }, 500);
 };
