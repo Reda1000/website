@@ -1,8 +1,5 @@
 "use strict";
 
-// Write TypeScript code!
-/*const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;*/
 // based on prepared DOM, initialize echarts instance
 var myChart = echarts.init(document.getElementById("main"));
 // specify chart configuration item and data
