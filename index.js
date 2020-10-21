@@ -72,7 +72,7 @@ var option = {
 };
 // use configuration item and data specified to show chart
 myChart.setOption(option);
-window["printDiv"] = function(divID) {
+function printDiv(divID) {
   //Get the HTML of div
   var divElements = document.getElementById(divID).innerHTML;
   //Get the HTML of whole page
@@ -98,4 +98,4 @@ window["printDiv"] = function(divID) {
       myChart.setOption(option);
     }
   }, 500);
-};
+}
