@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .individual > h5 {
   border-bottom: 3px solid white;
-  text-indent: 4rem;
+  text-indent: 3.8rem;
   font-size: large;
   padding-bottom: 0.2rem;
   margin-top: 1rem;
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline, .activity {
-  flex: 1; padding: 1.5rem; border-left: 3px solid #636F7D; margin-left: 2.5rem;
+  flex: 1; padding: 1.5rem; border-left: 3px solid #636F7D; margin-left: 2.2rem;
 }
 .activity {
   flex: 0; border-left: 0px solid #636F7D; margin-left: 1rem; padding: 0; padding-top: 0.8rem;
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline.timeline--small {
-  margin-left: 2.2rem; padding: 0; padding-top: 1rem; padding-left: calc(1rem - 6px); border-left: 3px solid white; 
+  margin-left: 1.8rem; padding: 0; padding-top: 1rem; padding-left: calc(1rem - 6px); border-left: 3px solid white; 
 }
 
 .timeline.timeline--small > i {
@@ -300,19 +300,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline > i, .activity > i {
   position: relative; left: -3rem; border-radius: 100%; border: 3px solid #636F7D; padding: 0.5rem; background: white; color: #636F7D; vertical-align: middle;
-  top: 0.2rem;
+  top: 0rem;
 }
 .activity > i {
   border: 0px solid #636F7D; padding: 0; background: transparent; color: white;
-  left: 0.5rem;
+  left: 0.1rem;
 }
 
 .timeline > div, .activity > div {
-  padding: 0.8rem; margin-top: -4.1rem
+  padding: 0.9rem; margin-top: -4.1rem
+}
+.timeline.timeline--small > div {
+  padding: 1.2rem;
 }
 .activity > div {
+  padding: 1.2rem;
   margin-top: -2.8rem;
-  margin-left: 2rem;
+  margin-left: 1.6rem;
 }
 
 .timeline > div > p {
