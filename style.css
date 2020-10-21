@@ -241,11 +241,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-set > .skill-set__skill.skill--activity {
-  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #97ADBF; background: #97ADBF; color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #30373D; background: #30373D;  
+  /*float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #97ADBF; background: #97ADBF;*/ color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
 }
 
 .skill-set > .skill-set__skill.skill--framework {
-  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #636F7D; background: #636F7D; color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
+  float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #30373D; background: #30373D;   /*float: left; border-radius: 10px; padding: 0.2rem 0.5rem; border: 1px solid #636F7D; background: #636F7D;*/
+   color: white; font-size: small; margin-right: 0.3rem; margin-bottom: 0.3rem;
 }
 
 .skill-set > .skill-set__skill.skill--technology {
